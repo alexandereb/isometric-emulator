@@ -6,7 +6,6 @@ function init () {
   createWorld = function(size, forest, lakes) {
     planes = [];
     world = document.getElementsByClassName("box-world")[0];
-    console.log(world);
 
     getRandomNumber = function (world_size) {
       return parseInt(Math.random() * world_size);
@@ -42,6 +41,29 @@ function init () {
     }
 
   }
+
+  //Create world 2.0
+  createWorld2 = function() {
+    planes = [];
+    world = document.getElementsByClassName("box-world")[0];
+    world.style.width = "2500px";
+    world.style.height = "2500px";
+
+    planes = (world.style.width.slice(0,-2)) / 50;
+    planes = planes * planes;
+    for (i = 0; i < planes + 1; i++) {
+      ground = document.createElement("div");
+      ground.style.float = "left";
+      ground.style.width = "50px";
+      ground.style.height = "50px";
+      ground.className = "box ground";
+      ground.setAttribute("id","id_"+i+"");
+      world.appendChild(ground);
+      console.log(ground)
+    }
+  }
+
+
 }
 
 
