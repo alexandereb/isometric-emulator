@@ -7,10 +7,6 @@ function init () {
     planes = [];
     world = document.getElementsByClassName("box-world")[0];
 
-    getRandomNumber = function (world_size) {
-      return parseInt(Math.random() * world_size);
-    }
-
     if (size == "S") {
       world.style.width = "18em";
       world.style.height = "18em";
@@ -44,6 +40,11 @@ function init () {
 
   //Create world 2.0
   createWorld2 = function() {
+
+    getRandomNumber = function (world_size) {
+      return parseInt(Math.random() * world_size);
+    }
+
     planes = [];
     world = document.getElementsByClassName("box-world")[0];
     world.style.width = "2500px";
@@ -59,7 +60,22 @@ function init () {
       ground.className = "box ground";
       ground.setAttribute("id","id_"+i+"");
       world.appendChild(ground);
-      console.log(ground)
+      // console.log(ground)
+    }
+
+    getRandomNumber = function (world_size) {
+      return parseInt(Math.random() * world_size);
+    }
+
+    for (i = 0; i <= 10; i++) {
+      forest = document.createElement("div")
+      forest.className = "box forest";
+      forest.style.top = num_top+"px";
+      forest.style.left = num_left+"px";
+      console.log(num_top)
+      box = document.getElementsByClassName("box")[num_top / 2];
+      console.log(box);
+      box.appendChild(forest);
     }
   }
 

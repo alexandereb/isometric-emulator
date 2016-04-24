@@ -53,50 +53,11 @@ body {
   left: 10em;
 }
 
-
-
-
-
-
-
-/* Alternate Colour */
-/*.cube:nth-child(even) {
-    background-color: #fc6;
+/*City*/
+.city {
+  
 }
-.cube:nth-child(even):after {
-    background-color: #eb5;
+.city .small{
+  background: url(assets/city/small_city.jpg) no-repeat;
+  background-size: 100%;
 }
-.cube:nth-child(even):before {
-    background-color: #da4;
-}*/
-/* Animation */
-/*@-webkit-keyframes wave {
-    50% { -webkit-transform: translateZ(4.5em); }
-}
-.cube:nth-child(1) {
-    -webkit-animation: wave 2s ease-in-out infinite;
-}
-.cube:nth-child(2) {
-    -webkit-animation: wave 2s .2s ease-in-out infinite;
-}
-.cube:nth-child(3) {
-    -webkit-animation: wave 2s .4s ease-in-out infinite;
-}
-.cube:nth-child(4) {
-    -webkit-animation: wave 2s .6s ease-in-out infinite;
-}
-.cube:nth-child(5) {
-    -webkit-animation: wave 2s .8s ease-in-out infinite;
-}
-.cube:nth-child(6) {
-    -webkit-animation: wave 2s 1s ease-in-out infinite;
-}
-.cube:nth-child(7) {
-    -webkit-animation: wave 2s 1.2s ease-in-out infinite;
-}
-.cube:nth-child(8) {
-    -webkit-animation: wave 2s 1.4s ease-in-out infinite;
-}
-.cube:nth-child(9) {
-    -webkit-animation: wave 2s 1.6s ease-in-out infinite;
-}*/
